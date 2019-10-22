@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="../../../../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="../../../../global_assets/js/main/jquery.min.js"></script>
+	<script src="../../../../global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="../../../../global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/datatables_basic.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-dark">
+		<div class="navbar-brand">
+			<a href="index.html" class="d-inline-block">
+				<img src="../../../../global_assets/images/logo_light.png" alt="">
+			</a>
+		</div>
+
+		<div class="d-md-none">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
+						<i class="icon-git-compare"></i>
+						<span class="d-md-none ml-2">Git updates</span>
+						<span class="badge badge-pill bg-warning-400 ml-auto ml-md-0">9</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-content wmin-md-350">
+						<div class="dropdown-content-header">
+							<span class="font-weight-semibold">Git updates</span>
+							<a href="#" class="text-default"><i class="icon-sync"></i></a>
+						</div>
+
+						<div class="dropdown-content-body dropdown-scrollable">
+							<ul class="media-list">
+								<li class="media">
+									<div class="mr-3">
+										<a href="#" class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon"><i class="icon-git-pull-request"></i></a>
+									</div>
+
+									<div class="media-body">
+										Drop the IE <a href="#">specific hacks</a> for temporal inputs
+										<div class="text-muted font-size-sm">4 minutes ago</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<a href="#" class="btn bg-transparent border-warning text-warning rounded-round border-2 btn-icon"><i class="icon-git-commit"></i></a>
+									</div>
+									
+									<div class="media-body">
+										Add full font overrides for popovers and tooltips
+										<div class="text-muted font-size-sm">36 minutes ago</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<a href="#" class="btn bg-transparent border-info text-info rounded-round border-2 btn-icon"><i class="icon-git-branch"></i></a>
+									</div>
+									
+									<div class="media-body">
+										<a href="#">Chris Arney</a> created a new <span class="font-weight-semibold">Design</span> branch
+										<div class="text-muted font-size-sm">2 hours ago</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<a href="#" class="btn bg-transparent border-success text-success rounded-round border-2 btn-icon"><i class="icon-git-merge"></i></a>
+									</div>
+									
+									<div class="media-body">
+										<a href="#">Eugene Kopyov</a> merged <span class="font-weight-semibold">Master</span> and <span class="font-weight-semibold">Dev</span> branches
+										<div class="text-muted font-size-sm">Dec 18, 18:36</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<a href="#" class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon"><i class="icon-git-pull-request"></i></a>
+									</div>
+									
+									<div class="media-body">
+										Have Carousel ignore keyboard events
+										<div class="text-muted font-size-sm">Dec 12, 05:46</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="dropdown-content-footer bg-light">
+							<a href="#" class="text-grey mr-auto">All updates</a>
+							<div>
+								<a href="#" class="text-grey" data-popup="tooltip" title="Mark all as read"><i class="icon-radio-unchecked"></i></a>
+								<a href="#" class="text-grey ml-2" data-popup="tooltip" title="Bug tracker"><i class="icon-bug2"></i></a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<span class="badge bg-success ml-md-3 mr-md-auto">Online</span>
+
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
+						<i class="icon-people"></i>
+						<span class="d-md-none ml-2">Users</span>
+					</a>
+					
+					<div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-300">
+						<div class="dropdown-content-header">
+							<span class="font-weight-semibold">Users online</span>
+							<a href="#" class="text-default"><i class="icon-search4 font-size-base"></i></a>
+						</div>
+
+						<div class="dropdown-content-body dropdown-scrollable">
+							<ul class="media-list">
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Jordana Ansley</a>
+										<span class="d-block text-muted font-size-sm">Lead web developer</span>
+									</div>
+									<div class="ml-3 align-self-center"><span class="badge badge-mark border-success"></span></div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Will Brason</a>
+										<span class="d-block text-muted font-size-sm">Marketing manager</span>
+									</div>
+									<div class="ml-3 align-self-center"><span class="badge badge-mark border-danger"></span></div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Hanna Walden</a>
+										<span class="d-block text-muted font-size-sm">Project manager</span>
+									</div>
+									<div class="ml-3 align-self-center"><span class="badge badge-mark border-success"></span></div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Dori Laperriere</a>
+										<span class="d-block text-muted font-size-sm">Business developer</span>
+									</div>
+									<div class="ml-3 align-self-center"><span class="badge badge-mark border-warning-300"></span></div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Vanessa Aurelius</a>
+										<span class="d-block text-muted font-size-sm">UX expert</span>
+									</div>
+									<div class="ml-3 align-self-center"><span class="badge badge-mark border-grey-400"></span></div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="dropdown-content-footer bg-light">
+							<a href="#" class="text-grey mr-auto">All users</a>
+							<a href="#" class="text-grey"><i class="icon-gear"></i></a>
+						</div>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
+						<i class="icon-bubbles4"></i>
+						<span class="d-md-none ml-2">Messages</span>
+						<span class="badge badge-pill bg-warning-400 ml-auto ml-md-0">2</span>
+					</a>
+					
+					<div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
+						<div class="dropdown-content-header">
+							<span class="font-weight-semibold">Messages</span>
+							<a href="#" class="text-default"><i class="icon-compose"></i></a>
+						</div>
+
+						<div class="dropdown-content-body dropdown-scrollable">
+							<ul class="media-list">
+								<li class="media">
+									<div class="mr-3 position-relative">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+
+									<div class="media-body">
+										<div class="media-title">
+											<a href="#">
+												<span class="font-weight-semibold">James Alexander</span>
+												<span class="text-muted float-right font-size-sm">04:58</span>
+											</a>
+										</div>
+
+										<span class="text-muted">who knows, maybe that would be the best thing for me...</span>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3 position-relative">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+
+									<div class="media-body">
+										<div class="media-title">
+											<a href="#">
+												<span class="font-weight-semibold">Margo Baker</span>
+												<span class="text-muted float-right font-size-sm">12:16</span>
+											</a>
+										</div>
+
+										<span class="text-muted">That was something he was unable to do because...</span>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<div class="media-title">
+											<a href="#">
+												<span class="font-weight-semibold">Jeremy Victorino</span>
+												<span class="text-muted float-right font-size-sm">22:48</span>
+											</a>
+										</div>
+
+										<span class="text-muted">But that would be extremely strained and suspicious...</span>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<div class="media-title">
+											<a href="#">
+												<span class="font-weight-semibold">Beatrix Diaz</span>
+												<span class="text-muted float-right font-size-sm">Tue</span>
+											</a>
+										</div>
+
+										<span class="text-muted">What a strenuous career it is that I've chosen...</span>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<div class="media-title">
+											<a href="#">
+												<span class="font-weight-semibold">Richard Vango</span>
+												<span class="text-muted float-right font-size-sm">Mon</span>
+											</a>
+										</div>
+										
+										<span class="text-muted">Other travelling salesmen live a life of luxury...</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="dropdown-content-footer justify-content-center p-0">
+							<a href="#" class="bg-light text-grey w-100 py-2" data-popup="tooltip" title="Load more"><i class="icon-menu7 d-block top-0"></i></a>
+						</div>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown dropdown-user">
+					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
+						<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2" height="34" alt="">
+						<span>Victoria</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
+						<a href="#" class="dropdown-item"><i class="icon-coins"></i> My balance</a>
+						<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Messages <span class="badge badge-pill bg-blue ml-auto">58</span></a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
+						<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- User menu -->
+				<div class="sidebar-user">
+					<div class="card-body">
+						<div class="media">
+							<div class="mr-3">
+								<a href="#"><img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="38" height="38" class="rounded-circle" alt=""></a>
+							</div>
+
+							<div class="media-body">
+								<div class="media-title font-weight-semibold">Victoria Baker</div>
+								<div class="font-size-xs opacity-50">
+									<i class="icon-pin font-size-sm"></i> &nbsp;Santa Ana, CA
+								</div>
+							</div>
+
+							<div class="ml-3 align-self-center">
+								<a href="#" class="text-white"><i class="icon-cog3"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /user menu -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<!-- Main -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Inicio</div> <i class="icon-menu" title="Empleados"></i></li>
+						<li class="nav-item"></li>
+							<a href="index.html" class="nav-link active">
+								<i class="icon-home4"></i>
+							
+								<span>
+									Dashboard
+								</span>
+							</a>
+						
+
+			
+
+						<!-- Tables 
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">submenu</div> <i class="icon-menu" title="submenu"></i></li>-->
+						<li class="nav-item nav-item-submenu">
+							<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-table2"></i> <span>Departamentos </span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Basic tables">
+								<li class="nav-item"><a href="table_basic.html" class="nav-link active">Tabla de contenido</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Altas de departamento</a></li>
+								<li class="nav-item"><a href="editar_usuarios.html" class="nav-link">Editar </a></li>
+								<li class="nav-item"><a href="vacaciones.html" class="nav-link">Vacaciones</a></li>
+								<!--<li class="nav-item"><a href="table_styling.html" class="nav-link">Table styling</a></li>
+								<li class="nav-item"><a href="table_elements.html" class="nav-link">Table elements</a></li>-->
+							</ul>
+						</li>
+
+							
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>Empleados</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Tabla de empleados</a></li>
+								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Altas de empleados</a></li>
+								<li class="nav-item"><a href="form_actions.html" class="nav-link">Editar Usuarios</a></li>
+								<!--<li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Deptomb</a></li>-->
+								<!--<li class="nav-item"><a href="datatable_api.html" class="nav-link">Using API</a></li>
+								<li class="nav-item"><a href="datatable_data_sources.html" class="nav-link">Data sources</a></li>-->
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>Empresas</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
+								<li class="nav-item"><a href="tablaempresa.html" class="nav-link">Tabla de empresas</a></li>
+								<!--<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Alta de usuarios</a></li>
+								<li class="nav-item"><a href="form_actions.html" class="nav-link">Editar usuarios</a></li>
+								<!-<li class="nav-item"><a href="datatable_data_sources.html" class="nav-link">Data sources</a></li>-->
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+						
+
+					</ul>
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+			
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header page-header-light">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Listado</span> - Empleados</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none">
+						<div class="d-flex justify-content-center">
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+					<div class="d-flex">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<a href="datatable_basic.html" class="breadcrumb-item">Datatables</a>
+							<span class="breadcrumb-item active">Basic</span>
+						</div>
+
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none">
+						<div class="breadcrumb justify-content-center">
+							<a href="#" class="breadcrumb-elements-item">
+								<i class="icon-comment-discussion mr-2"></i>
+								Support
+							</a>
+
+							<div class="breadcrumb-elements-item dropdown p-0">
+								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
+									<i class="icon-gear mr-2"></i>
+									Settings
+								</a>
+
+								<div class="dropdown-menu dropdown-menu-right">
+									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+
+
+			<!-- Content area -->
+			<div class="content">
+
+				<!-- Basic datatable -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Listado de empresas</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+
+                        <p> A continuación se muestra el registro de las empresas.</p>
+						<!-- The <code>DataTables</code> is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table. DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function. Searching, ordering, paging etc goodness will be immediately added to the table, as shown in this example. <strong>Datatables support all available table styling.</strong> -->
+					</div>
+
+					<table class="table datatable-basic">
+						<thead>
+							<tr>
+							    <th>ID</th>	
+								<th>Nombre  de la empresa</th>
+								<th>Dueño de la empresa</th>
+								<th>Dirección</th>
+								<th>Producción</th>
+								<th>Teléfono</th>
+			
+								<!-- <th class="text-center">Actions</th> -->
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>100</td>
+								<td>comerdiseño</td>
+								<td>Charles Santos</td>
+								<td>Colonia libertad</td>
+								<td>diseño gráfico</td>
+								<td>834 101 95 06</td>
+								
+								<!--
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td> -->
+							</tr>
+							<tr>
+								<td>101</td>
+								<td>carnes el sol</td>
+								<td>Kevin Mata</td>
+								<td>Calle cierra ventan</td>
+								<td>Cortes de carnes</td>
+								<td>834 125 65 82</td>
+								<!--
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr> -->
+							<tr>
+								<td>102</td>
+								<td>Jefree star cossmetics</td>
+								<td>Jeree star</td>
+								<td>Calle obrador</td>
+								<td>Maquillaje</td>
+								<td>834 201 52 67</td>
+								<!--
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr> -->
+							<tr>
+								<td>103</td>
+								<td>Forever 5</td>
+								<td>Leslye Mora</td>
+								<td>Calle las americas</td>
+								<td>ropa</td>
+								<td>834 208 18 21</td>
+								<!--
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr> -->
+							<tr>
+								<td>104</td>
+								<td>Cinepolis</td>
+								<td>Alejandro Rámirez</td>
+								<td>Calle Torre eifel</td>
+								<td>cine</td>
+								<td>834 146 32 00</td>
+								<!--
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr> -->
+							<tr>
+								<td>105</td>
+								<td>Christian Lovoutin</td>
+								<td> Christian Lovoutin</td>
+								<td>Calle zona centro</td>
+								<td>Zapatos</td>
+								<td>834 109 45 83</td>
+								<!--
+								<td><a href="#">Woldt</a></td>
+								<td><a href="#">Business Services Sales Representative</a></td>
+								<td>17 Oct 1987</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr> -->
+							<tr>
+								<td>106</td>
+								<td>Rotoplas</td>
+								<td>Carlos Rojas Mota Velazcos</td>
+								<td>Calle pajaritos</td>
+								<td>Tinacos</td>
+								<td>834 180 0709</td>
+								<!--
+								<td><a href="#">Mcgaughy</a></td>
+								<td>Hemodialysis Technician</td>
+								<td>11 Nov 1983</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr> -->
+							<tr>
+								<td>107</td>
+								<td>La costeña</td>
+								<td>Vicente Lopez Recines</td>
+								<td>Calle 27 hidalgo</td>
+								<td>Productos de comida mexicanos</td>
+								<td>834 150 80 50</td> 
+								<!--
+								<td><a href="#">Goodlow</a></td>
+								<td>Technical Services Librarian</td>
+								<td>1 Nov 1961</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr> -->
+							<tr>
+								<td>108</td>
+								<td>jarritos</td>
+								<td>Fransisco Gill Avalos </td>
+								<td>Calle Chapultepec</td>
+								<td>Refrescos</td>
+								<td>834 108 69 96</td>
+								</tr>
+<tr>
+								<td>109</td>
+								<td>Too Faced</td>
+								<td>Jerrod Blandino </td>
+								<td>Calle Holliwood</td>
+								<td>Maquilaje</td>
+								<td>834 108 69 88</td>
+								</tr>
+
+</body>
+</html>
